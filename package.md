@@ -19,8 +19,10 @@
 - cookie-parser
 - express-session
 
-## Database ORM
+## Database
 
+- mysql
+- redis
 - sequelize
 - mongoose   
 - mongoose-unique-validator
@@ -45,6 +47,11 @@
 
 - async
 
-## Status monitor
+## Log && status
 
+- morgan
 - express-status-monitor
+
+## Compression
+
+- compression
