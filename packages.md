@@ -9,6 +9,11 @@
 - sails
 - hapi
 
+## Message Queue 
+
+- mqtt
+- bull
+
 ## Realtime application framework
 
 - socket.io
@@ -60,3 +65,4 @@
 ## Compression
 
 - compression
+
