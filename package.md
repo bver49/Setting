@@ -47,6 +47,11 @@
 
 - async
 
+## Process manager
+
+- pm2 
+- nodemon
+
 ## Log && status
 
 - morgan
