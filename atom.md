@@ -49,7 +49,13 @@
     'body':'JSON.parse($1)'
   'require':
     'prefix':'req'
+    'body':'require(\'${1:module}\');'
+  'var require':
+    'prefix':'vreq'
     'body':'var ${1:module} = require(\'${1:module}\');'
+  'template string':
+    'prefix':'ts'
+    'body':'\$\{ $1 \}'
   'onEvent':
     'prefix':'onf'
     'body':'on(\'event\',function(){$1\n\n});'
