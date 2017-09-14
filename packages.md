@@ -23,6 +23,14 @@
 ## Realtime application framework
 
 - socket.io
+- ws
+- engine.io
+- faye
+
+## HTTP Client
+
+- request
+- axios
 
 ## Body && Cookie && Session
 
