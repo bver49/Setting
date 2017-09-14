@@ -15,8 +15,9 @@
 
 ## Message Queue 
 
-- amqplib
-- mqtt
+- mosca (MQ server)
+- amqplib (MQ client)
+- mqtt (MQ client)
 - bull
 
 ## Realtime application framework
