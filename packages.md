@@ -15,6 +15,7 @@
 
 ## Message Queue 
 
+- amqplib
 - mqtt
 - bull
 
