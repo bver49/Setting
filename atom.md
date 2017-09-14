@@ -1,4 +1,4 @@
-Packages:
+## Packages:
 
 - advanced-open-file
 - atom-beautify
@@ -8,15 +8,16 @@ Packages:
 - git-plus
 - minimap
 - merge-conflicts
+- language-ejs
 - linter
 - linter-eslint
 
-Theme:
+## Theme:
 
 - monokai	
 - seti-ui
 
-Keybind:
+## Keybind:
 
 ```cson
 'atom-text-editor':
@@ -33,7 +34,28 @@ Keybind:
     'cmd-n': 'advanced-open-file:toggle'
 ```
 
-Custom stylesheet
+## Snippet
+
+```cson
+'.source.js':
+  'setTimeout':
+    'prefix': 'stt'
+    'body': 'setTimeout(function(){$1\n\n},1000);'
+  'JSON.stringify':
+    'prefix':'jstr'
+    'body':'JSON.stringify($1)'
+  'JSON.parse':
+    'prefix':'jpar'
+    'body':'JSON.parse($1)'
+  'require':
+    'prefix':'req'
+    'body':'var ${1:module} = require(\'${1:module}\');'
+  'onEvent':
+    'prefix':'onf'
+    'body':'on(\'event\',function(){$1\n\n});'
+```
+
+## Custom stylesheet
 
 ```less
 .bracket-matcher {
@@ -43,7 +65,7 @@ Custom stylesheet
 }
 ```
 
-Config
+## Config
 
 ```cson
 "*":
