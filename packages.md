@@ -84,5 +84,8 @@
 ## Util
 
 - rimraf
+- glob
 - del
 - shelljs
+- lodash
+- underscore
