@@ -12,6 +12,7 @@
 ## API Doc
 
 - swagger
+- apidoc
 
 ## Message Queue 
 
@@ -80,3 +81,7 @@
 
 - compression
 
+## Util
+
+- rimraf
+- shelljs
