@@ -8,6 +8,7 @@
 - loopback
 - sails
 - hapi
+- node-static
 
 ## API Doc
 
