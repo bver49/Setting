@@ -77,6 +77,7 @@
 
 ## Log && status
 
+- debug
 - morgan
 - express-status-monitor
 
