@@ -44,15 +44,17 @@
 
 - mysql
 - redis
-- sequelize
 - mongoose   
 - mongoose-unique-validator
 - knex
+- orm
+- sequelize
 
-## Safety
+## Safety 
 
 - jsonwebtoken
 - helmet
+- bcrypt
 
 ## View engine
 
@@ -90,3 +92,12 @@
 - shelljs
 - lodash
 - underscore
+
+## CLI tool
+
+- yargs
+- yargs-parser
+- inquirer
+- chalk
+- cli-progress
+- commander
