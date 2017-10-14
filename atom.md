@@ -3,6 +3,7 @@
 - advanced-open-file
 - atom-beautify
 - atom-ternjs
+- atom-minify
 - autocomplete-modules
 - cht-menu
 - git-plus
