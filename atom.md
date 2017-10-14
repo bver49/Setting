@@ -72,14 +72,13 @@
 ```
 
 ## Config
-
 ```cson
 "*":
   "atom-beautify":
     general:
       beautifyEntireFileOnSave: false
     js:
-      brace_style: "end-expand"
+      brace_style: "collapse-preserve-inline"
   "atom-ternjs":
     origins: false
     urls: false
