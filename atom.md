@@ -6,8 +6,10 @@
 - autocomplete-modules
 - cht-menu
 - git-plus
+- git-blame
 - minimap
 - merge-conflicts
+- language-docker
 - language-ejs
 - linter
 - linter-eslint
@@ -76,26 +78,27 @@
 "*":
   "atom-beautify":
     general:
-      beautifyEntireFileOnSave: false
+      _analyticsUserId: "_analyticsUserId"
     js:
       brace_style: "collapse-preserve-inline"
-  "atom-ternjs":
-    origins: false
-    urls: false
+      end_with_newline: true
+      indent_size: 2
+  "atom-minify":
+    jsMinifier: "UglifyJS2"
   core:
+    audioBeep: false
     automaticallyUpdate: false
     closeDeletedFileTabs: true
     disabledPackages: [
-      "about"
+      "autocomplete-atom-api"
       "autoflow"
       "autosave"
       "background-tips"
       "bookmarks"
-      "deprecation-cop"
-      "exception-reporting"
       "language-clojure"
       "language-coffee-script"
       "language-csharp"
+      "language-hyperlink"
       "language-java"
       "language-less"
       "language-mustache"
@@ -105,46 +108,37 @@
       "language-property-list"
       "language-ruby"
       "language-ruby-on-rails"
-      "language-python"
       "language-sass"
-      "language-toml"
-      "language-todo"
-      "wrap-guide"
-      "welcome"
-      "timecop"
-      "styleguide"
-      "spell-check"
-      "open-on-github"
-      "language-yaml"
-      "link"
-      "language-xml"
-      "language-hyperlink"
-      "symbols-view"
       "language-source"
-      "autocomplete-atom-api"
+      "language-todo"
+      "language-toml"
+      "link"
+      "open-on-github"
+      "spell-check"
+      "styleguide"
+      "symbols-view"
+      "timecop"
+      "welcome"
+      "wrap-guide"
     ]
     restorePreviousWindowsOnStart: "no"
-    telemetryConsent: "no"
+    telemetryConsent: "limited"
     themes: [
       "seti-ui"
       "monokai"
     ]
     titleBar: "custom"
   editor:
-    autoIndentOnPaste: false
-    confirmCheckoutHeadRevision: false
-    fontFamily: "Fira Code"
-    fontSize: 23
-    invisibles: {}
+    fontFamily: "FiraCode-Retina"
+    fontSize: 19
     lineHeight: 1.8
-    preferredLineLength: 240
+    preferredLineLength: 160
+    scrollPastEnd: true
     scrollSensitivity: 80
     showIndentGuide: true
-    tabLength: 4
   "exception-reporting":
-    userId: "useid"
-  "linter-eslint": {}
-  "linter-ui-default": {}
-  minimap: {}
-
+    userId: "18f24341-3ace-4d4a-b2f7-38ebb83bf0e4"
+  "git-blame":
+    columnWidth: 304
+  "tree-view": {}
 ```
