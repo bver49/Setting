@@ -35,6 +35,9 @@
 
 '.platform-darwin atom-workspace':
     'cmd-n': 'advanced-open-file:toggle'
+    
+'.workspace':
+    'cmd-t': 'github:toggle-git-tab'
 ```
 
 ## Snippet
@@ -77,29 +80,40 @@
 ## Config
 ```cson
 "*":
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
   "atom-beautify":
     general:
-      _analyticsUserId: "_analyticsUserId"
+      beautifyEntireFileOnSave: false
     js:
       brace_style: "collapse-preserve-inline"
       end_with_newline: true
       indent_size: 2
+      indent_with_tabs: true
+      keep_function_indentation: true
+    json:
+      brace_style: "collapse-preserve-inline"
+      indent_with_tabs: true
   "atom-minify":
-    jsMinifier: "UglifyJS2"
+    jsMinifier: "Google Closure Compiler"
+  "atom-ternjs":
+    origins: false
+    urls: false
   core:
-    audioBeep: false
     automaticallyUpdate: false
     closeDeletedFileTabs: true
     disabledPackages: [
-      "autocomplete-atom-api"
+      "about"
       "autoflow"
       "autosave"
       "background-tips"
       "bookmarks"
+      "deprecation-cop"
+      "exception-reporting"
       "language-clojure"
       "language-coffee-script"
       "language-csharp"
-      "language-hyperlink"
       "language-java"
       "language-less"
       "language-mustache"
@@ -109,37 +123,49 @@
       "language-property-list"
       "language-ruby"
       "language-ruby-on-rails"
+      "language-python"
       "language-sass"
-      "language-source"
-      "language-todo"
       "language-toml"
-      "link"
-      "open-on-github"
-      "spell-check"
-      "styleguide"
-      "symbols-view"
-      "timecop"
-      "welcome"
+      "language-todo"
       "wrap-guide"
+      "welcome"
+      "timecop"
+      "styleguide"
+      "spell-check"
+      "open-on-github"
+      "link"
+      "language-hyperlink"
+      "symbols-view"
+      "language-source"
+      "autocomplete-atom-api"
+      "language-make"
+      "language-yaml"
+    ]
+    packagesWithKeymapsDisabled: [
+      "git-diff"
     ]
     restorePreviousWindowsOnStart: "no"
-    telemetryConsent: "limited"
+    telemetryConsent: "no"
     themes: [
       "seti-ui"
       "monokai"
     ]
     titleBar: "custom"
   editor:
+    autoIndentOnPaste: false
     fontFamily: "FiraCode-Retina"
-    fontSize: 19
+    fontSize: 21
+    invisibles: {}
     lineHeight: 1.8
-    preferredLineLength: 160
-    scrollPastEnd: true
+    preferredLineLength: 240
     scrollSensitivity: 80
     showIndentGuide: true
   "exception-reporting":
-    userId: "18f24341-3ace-4d4a-b2f7-38ebb83bf0e4"
+    userId: "user_id"
+  "find-and-replace": {}
   "git-blame":
-    columnWidth: 304
-  "tree-view": {}
+    columnWidth: 389
+  "git-diff":
+    showIconsInEditorGutter: true
+  minimap: {}
 ```
