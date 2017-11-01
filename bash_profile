@@ -18,3 +18,9 @@ function din(){
 }
 
 export EPACK="express body-parser cookie-parser"
+
+export GOPATH="$HOME/Desktop/gocode"
+
+export GOW="$GOPATH/src/github.com/bver49/"
+
+export PATH="$PATH:$GOPATH/bin"
