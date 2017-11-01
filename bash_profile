@@ -17,8 +17,6 @@ function din(){
     docker exec -it $1 bash
 }
 
-export EPACK="express body-parser cookie-parser"
-
 export GOPATH="$HOME/Desktop/gocode"
 
 export GOW="$GOPATH/src/github.com/bver49/"
