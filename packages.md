@@ -102,6 +102,7 @@
 - chalk
 - cli-progress
 - commander
+- minimist
 
 ## Excel
 
