@@ -88,13 +88,14 @@
       beautifyEntireFileOnSave: false
     js:
       brace_style: "collapse-preserve-inline"
+      end_with_comma: true
       end_with_newline: true
       indent_size: 2
-      indent_with_tabs: true
       keep_function_indentation: true
+      space_after_anon_function: true
+      space_in_paren: true
     json:
       brace_style: "collapse-preserve-inline"
-      indent_with_tabs: true
   "atom-minify":
     jsMinifier: "Google Closure Compiler"
   "atom-ternjs":
