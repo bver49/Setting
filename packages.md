@@ -69,6 +69,7 @@
 ## Asynchronous
 
 - async
+- asyncawait
 
 ## Process manager
 
