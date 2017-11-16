@@ -86,7 +86,7 @@
 
 - compression
 
-## Util
+## Other
 
 - rimraf
 - glob
@@ -94,6 +94,8 @@
 - shelljs
 - lodash
 - underscore
+- ramda
+- cron
 
 ## CLI tool
 
