@@ -8,6 +8,7 @@
 - cht-menu
 - git-plus
 - git-blame
+- goto-definition
 - minimap
 - merge-conflicts
 - language-docker
