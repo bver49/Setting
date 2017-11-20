@@ -6,8 +6,11 @@
 - atom-minify
 - autocomplete-modules
 - cht-menu
+- editorconfig
 - git-plus
 - git-blame
+- git-diff-details
+- git-log
 - goto-definition
 - minimap
 - merge-conflicts
@@ -26,6 +29,7 @@
 ```cson
 'atom-text-editor':
     'cmd-b': 'atom-beautify:beautify-editor'
+    'ctrl-f':'git-diff-details:toggle-git-diff-details'
 
 'atom-text-editor:not([mini])':
     'cmd-x': 'editor:delete-line'
@@ -36,7 +40,7 @@
 
 '.platform-darwin atom-workspace':
     'cmd-n': 'advanced-open-file:toggle'
-    
+
 '.workspace':
     'cmd-t': 'github:toggle-git-tab'
 ```
@@ -89,12 +93,10 @@
       beautifyEntireFileOnSave: false
     js:
       brace_style: "collapse-preserve-inline"
-      end_with_comma: true
       end_with_newline: true
       indent_size: 2
       keep_function_indentation: true
-      space_after_anon_function: true
-      space_in_paren: true
+      space_before_conditional: false
     json:
       brace_style: "collapse-preserve-inline"
   "atom-minify":
@@ -116,7 +118,6 @@
       "language-clojure"
       "language-coffee-script"
       "language-csharp"
-      "language-java"
       "language-less"
       "language-mustache"
       "language-objective-c"
@@ -142,9 +143,12 @@
       "autocomplete-atom-api"
       "language-make"
       "language-yaml"
+      "language-java"
+      "metrics"
     ]
     packagesWithKeymapsDisabled: [
       "git-diff"
+      "git-diff-details"
     ]
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
@@ -163,11 +167,17 @@
     scrollSensitivity: 80
     showIndentGuide: true
   "exception-reporting":
-    userId: "user_id"
+    userId: "userid"
   "find-and-replace": {}
   "git-blame":
     columnWidth: 389
   "git-diff":
     showIconsInEditorGutter: true
+  "git-diff-details":
+    enableSyntaxHighlighting: true
+    keepViewToggled: false
+  "git-log":
+    fontScale: 0.8
   minimap: {}
+  "tree-view": {}
 ```
