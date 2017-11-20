@@ -29,7 +29,7 @@
 ```cson
 'atom-text-editor':
     'cmd-b': 'atom-beautify:beautify-editor'
-    'ctrl-f':'git-diff-details:toggle-git-diff-details'
+    'cmd-r':'git-diff-details:toggle-git-diff-details'
 
 'atom-text-editor:not([mini])':
     'cmd-x': 'editor:delete-line'
@@ -132,7 +132,6 @@
       "language-todo"
       "wrap-guide"
       "welcome"
-      "timecop"
       "styleguide"
       "spell-check"
       "open-on-github"
@@ -145,6 +144,10 @@
       "language-yaml"
       "language-java"
       "metrics"
+      "atom-minify"
+      "timecop"
+      "language-typescript"
+      "language-sql"
     ]
     packagesWithKeymapsDisabled: [
       "git-diff"
@@ -160,7 +163,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "FiraCode-Retina"
-    fontSize: 21
+    fontSize: 23
     invisibles: {}
     lineHeight: 1.8
     preferredLineLength: 240
