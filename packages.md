@@ -21,6 +21,7 @@
 - amqplib (MQ client)
 - mqtt (MQ client)
 - bull
+- q
 
 ## Realtime application framework
 
@@ -61,13 +62,10 @@
 - ejs
 - ejs-locals
 
-## Promise
+## Flow control
 
 - bluebird
-- q
-
-## Asynchronous
-
+- es6-promisify
 - async
 - asyncawait
 
