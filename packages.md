@@ -1,6 +1,6 @@
 # Packages
 
-## WEB server 
+## HTTP Server 
 
 - express
 - fastify
