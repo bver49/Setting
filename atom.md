@@ -43,6 +43,7 @@
 
 '.workspace':
     'cmd-t': 'github:toggle-git-tab'
+    'cmd-m':'merge-conflicts:detect'
 ```
 
 ## Snippet
@@ -157,6 +158,7 @@
       "git-diff"
       "git-diff-details"
       "github"
+      "merge-conflicts"
     ]
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
@@ -175,7 +177,7 @@
     scrollSensitivity: 80
     showIndentGuide: true
   "exception-reporting":
-    userId: "userid"
+    userId: "userId"
   "find-and-replace": {}
   "git-blame":
     columnWidth: 389
