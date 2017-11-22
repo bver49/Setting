@@ -89,13 +89,15 @@
     createDirectories: true
     createFileInstantly: true
   "atom-beautify":
+    ejs:
+      brace_style: "collapse-preserve-inline"
+      space_before_conditional: false
     general:
       beautifyEntireFileOnSave: false
     js:
       brace_style: "collapse-preserve-inline"
       end_with_newline: true
       indent_size: 2
-      keep_function_indentation: true
       space_before_conditional: false
     json:
       brace_style: "collapse-preserve-inline"
@@ -105,6 +107,7 @@
     origins: false
     urls: false
   core:
+    audioBeep: false
     automaticallyUpdate: false
     closeDeletedFileTabs: true
     disabledPackages: [
@@ -148,10 +151,12 @@
       "timecop"
       "language-typescript"
       "language-sql"
+      "whitespace"
     ]
     packagesWithKeymapsDisabled: [
       "git-diff"
       "git-diff-details"
+      "github"
     ]
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
@@ -163,7 +168,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "FiraCode-Retina"
-    fontSize: 23
+    fontSize: 19
     invisibles: {}
     lineHeight: 1.8
     preferredLineLength: 240
@@ -181,6 +186,7 @@
     keepViewToggled: false
   "git-log":
     fontScale: 0.8
+  github: {}
   minimap: {}
   "tree-view": {}
 ```
