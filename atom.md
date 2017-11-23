@@ -14,6 +14,7 @@
 - goto-definition
 - minimap
 - merge-conflicts
+- platformio-ide-terminal
 - language-docker
 - language-ejs
 - linter
