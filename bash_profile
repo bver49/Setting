@@ -1,21 +1,27 @@
-alias ns="npm start"
-alias ni="npm install"
-alias nu="npm uninstall"
-alias nis="npm install --save "
-alias nisd="npm install --save-dev "
-alias rm="rm -rf"
-alias lm="ls -la"
-alias gi="echo -e 'node_modules\n.DS_Store' >> .gitignore"
-alias drm="docker rm -f "
-alias drmi="docker rmi -f "
+PS1='\h:\W \u\$ '
 
-function drb() {
+alias gi="echo -e 'node_modules\n.DS_Store' >> .gitignore"
+
+drb() {
     docker run -d -P --name $1 $2
 }
 
-function din(){
+din(){
     docker exec -it $1 bash
 }
+
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+rollback() {
+   git reset HEAD^
+}
+
+export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
 
 export GOPATH="$HOME/Desktop/gocode"
 
