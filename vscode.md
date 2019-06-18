@@ -1,3 +1,5 @@
+# Setting
+
 ```json
 {
     "grunt.autoDetect": "off",
@@ -69,7 +71,7 @@
 }
 ```
 
-keybind
+# Keybind
 
 ```
 // 將您的按鍵組合放入此檔案中以覆寫預設值
@@ -151,4 +153,28 @@ keybind
         "command": "-workbench.action.files.newUntitledFile"
     }
 ]
+```
+
+# Package
+
+```
+advanced-new-file
+babel es6/es7
+beautify
+bracket pair colorizer
+cdnjs
+Chinese Language Pack for visual studio code
+EditorConfig for VS code
+gitlens
+laravel 5 snippets
+laravel blade snippets
+markdown preview enhanced
+monokai Dark soda
+Partial diff
+Path intellisense
+PHP intellisense
+phpfmt
+sort lines
+trailing spaces
+vscode-icons
 ```
