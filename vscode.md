@@ -6,22 +6,66 @@
     "gulp.autoDetect": "off",
     "extensions.ignoreRecommendations": true,
     "workbench.startupEditor": "none",
-    "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Monokai Dark Soda",
     "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
-    "editor.formatOnPaste": true,
-    "editor.fontSize": 18,
+    "editor.fontSize": 14,
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
     "editor.scrollBeyondLastLine": false,
     "editor.fontLigatures": true,
     "explorer.confirmDragAndDrop": false,
-    "vsicons.dontShowNewVersionMessage": true,
     "editor.renderIndentGuides": true,
     "workbench.editor.enablePreview": false,
     "html.autoClosingTags": false,
     "editor.smoothScrolling": true,
-    "editor.mouseWheelScrollSensitivity": 0.5
+    "editor.mouseWheelScrollSensitivity": 0.5,
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+    "php.memoryLimit": "2048M",
+    "gitlens.statusBar.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.blame.heatmap.enabled": false,
+    "gitlens.blame.highlight.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "window.zoomLevel": 1,
+    "gitlens.gitExplorer.files.layout": "list",
+    "debug.internalConsoleOptions": "neverOpen",
+    "gitlens.historyExplorer.enabled": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/vendor":true,
+        "**/node_modules": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/vendor/**": true
+    },
+    "blade.format.enable": true,
+    "gitlens.views.repositories.files.layout": "list",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "emmet.excludeLanguages": [
+        "markdown",
+        "php"
+    ]
 }
 ```
 
@@ -89,6 +133,22 @@ keybind
         "key": "ctrl+alt+cmd+[Slash]",
         "command": "-editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+n",
+        "command": "extension.advancedNewFile"
+    },
+    {
+        "key": "alt+cmd+n",
+        "command": "-extension.advancedNewFile"
+    },
+    {
+        "key": "alt+cmd+n",
+        "command": "workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "cmd+n",
+        "command": "-workbench.action.files.newUntitledFile"
     }
 ]
 ```
