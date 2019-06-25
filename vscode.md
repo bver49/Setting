@@ -159,6 +159,7 @@
 
 ```
 advanced-new-file
+ansible
 babel es6/es7
 beautify
 bracket pair colorizer
