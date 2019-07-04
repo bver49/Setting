@@ -165,10 +165,11 @@ beautify
 bracket pair colorizer
 cdnjs
 Chinese Language Pack for visual studio code
+DotENV
 EditorConfig for VS code
 gitlens
 laravel 5 snippets
-laravel blade snippets
+laravel-blade
 markdown preview enhanced
 monokai Dark soda
 Partial diff
