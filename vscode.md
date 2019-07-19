@@ -74,7 +74,7 @@
 # Keybind
 
 ```
-// 將您的按鍵組合放入此檔案中以覆寫預設值
+// 將按鍵繫結關係放在此檔案中以覆寫預設
 [
     {
         "key": "cmd+x",
@@ -151,6 +151,16 @@
     {
         "key": "cmd+n",
         "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "cmd+right",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+right",
+        "command": "-editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
     }
 ]
 ```
