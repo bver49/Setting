@@ -185,6 +185,7 @@ monokai Dark soda
 Partial diff
 Path intellisense
 PHP intellisense
+PHP Intelephense
 phpfmt
 sort lines
 trailing spaces
