@@ -18,7 +18,7 @@ markdown preview enhanced
 monokai Dark soda
 NGINX Configuration Language Support
 Partial diff
-PHP Intelephense
+PHP Intelephense 1.2.3
 python
 sort lines
 tabnine
