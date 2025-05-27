@@ -13,11 +13,8 @@
     "editor.scrollBeyondLastLine": false,
     "editor.fontLigatures": true,
     "explorer.confirmDragAndDrop": false,
-    "editor.renderIndentGuides": true,
-    "workbench.editor.enablePreview": false,
     "html.autoClosingTags": false,
     "editor.smoothScrolling": true,
-    "editor.mouseWheelScrollSensitivity": 0.5,
     "gitlens.statusBar.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
@@ -26,30 +23,35 @@
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
+        "suppressGitMissingWarning": true,
         "suppressShowKeyBindingsNotice": true
     },
     "debug.internalConsoleOptions": "neverOpen",
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
+        "_ide_helper.php": true,
         "**/.DS_Store": true,
-        "**/vendor":true,
-        "**/node_modules": true
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/Admin/store/Classes/PHPExcel/**": true,
+        "**/cdn": true,
+        "**/CVS": true,
+        "**/grandPeak": true,
+        "**/includes/PHPExcel/**": true,
+        "**/node_modules": true,
+        "**/themes": true,
+        "**/vendor": true,
+        "**/webfontkit": true,
+        "pls.phpstorm.php": true
     },
     "files.watcherExclude": {
+        "_ide_helper.php": true,
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
+        "**/Admin/store/Classes/PHPExcel/**": true,
         "**/node_modules/**": true,
-        "**/vendor/**": true
+        "**/vendor/**": true,
+        "pls.phpstorm.php": true
     },
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": true,
@@ -76,23 +78,29 @@
     ],
     "tabnine.experimentalAutoImports": true,
     "update.mode": "manual",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        },
-        {
-            "viewType": "jupyter-notebook",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
-    "python.languageServer": "Microsoft",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.php": "default"
+    },
+    "python.languageServer": "Default",
     "git.ignoreMissingGitWarning": true,
-    "diffEditor.ignoreTrimWhitespace": false,
     "yaml.customTags": [
         "!encrypted/pkcs1-oaep scalar",
         "!vault scalar"
     ],
     "yaml.schemaStore.enable": false,
-    "window.zoomLevel": 1
+    "workbench.iconTheme": "vscode-icons",
+    "bracketPairColorizer.depreciation-notice": false,
+    "redhat.telemetry.enabled": true,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.guides.indentation": true,
+    "editor.inlineSuggest.enabled": true,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.scrollbar.verticalScrollbarSize": 12,
+    "editor.mouseWheelScrollSensitivity": 0.5,
+    "window.zoomLevel": 1,
+    "git.enableSmartCommit": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.hideUnchangedRegions.enabled": true
 }
